@@ -1,4 +1,4 @@
-const req = require('./node_modules/requestify')
+const req = require('requestify')
 const basePublicUrl = 'https://www.cxd.network/api/public/v1/'
 var cachedPrices = [] /* Temporary solution until i properly learn Promises/Callbacks! Please do a pull-request if you can fix this. <3 */
 /* cachedProfiles = [] */

@@ -14,7 +14,7 @@ npm i concordapi
 ```
 And require the module in your Node.js application with:
 ```js
-var concord = require("concordapi");
+var concord = require("concordapi")
 ```
 
 
@@ -25,23 +25,23 @@ The Concord API, at current time, has to have an instantiation period. This is a
 
 To get the API ready for usage, instantiate the API and Caching with:
 ```js
-concord.connect(); //Console should print "CXDx Prices cached... Services are Ready"
+concord.connect() //Console should print "CXDx Prices cached... Services are Ready"
 ```
 
 ### Reading Concord Exchange (CXDx) Prices
 
 To check a coin's price in CXD use:
 ```js
-concord.price(string);
+concord.price(string)
 ```
 
 For example, using:
 ```js
-var coin = "IC";
-setInterval(checkPrice, 5000);
+var coin = "IC"
+setInterval(checkPrice, 5000)
 
-function checkPrice(){
-	console.log('1 '+coin+' is '+concord.price(coin)+' CXD');
+function checkPrice () {
+	console.log('1 '+coin+' is '+concord.price(coin)+' CXD')
 }
 ```
 Would log the price of IC (Ignition Coin) every 5 seconds, due to the way caching works here, each result is one 'API-Tick' older than the requested latest price.
@@ -54,13 +54,13 @@ Coming soon, Module bug mentioned before makes this function impossible to creat
 ## Full Examples
   Examples in this section can be freely copy/pasted into your code and modified to your choosing.
   ```js
-  var concord = require("concordapi");
-  concord.connect(); //Instantiate Concord Library and load cache.
+  var concord = require("concordapi")
+  concord.connect() //Instantiate Concord Library and load cache.
 
-  var coin = "IC"; //Coin listed on CXDx to check price of, in CXD.
-  setInterval(checkPrice, 5000); //Check coin-price every 5 seconds
+  var coin = "IC" //Coin listed on CXDx to check price of, in CXD.
+  setInterval(checkPrice, 5000) //Check coin-price every 5 seconds
 
-  function checkPrice(){
-  	console.log('1 '+coin+' is '+concord.price(coin)+' CXD'); // Prints the price of the CXDx Coin
+  function checkPrice () {
+  	console.log('1 '+coin+' is '+concord.price(coin)+' CXD') // Prints the price of the CXDx Coin
   }
 ```
