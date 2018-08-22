@@ -1,0 +1,42 @@
+{
+  "name": "concordapi",
+  "version": "1.0.4",
+  "description": "The Official Concord REST API Package for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Concord-API"
+  },
+  "keywords": [
+    "Concord",
+    "CXD",
+    "Crypto",
+    "Cryptocurrency",
+    "Exchange",
+    "API",
+    "Finance",
+    "ConcordCXD",
+    "ConcordAPI",
+    "Profiling"
+  ],
+  "author": "Eupharia113",
+  "license": "MIT",
+  "dependencies": {
+    "requestify": "^0.2.5"
+  },
+  "bugs": {
+    "url": "https://github.com/Eupharia113/Concord-API/issues"
+  },
+  "homepage": "https://github.com/Eupharia113/Concord-API",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
